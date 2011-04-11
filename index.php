@@ -5,8 +5,9 @@
 </head>
 <body>
 <?php
+function getVersion(){ return "1.0"; }
 function ShowIndexMessage($msgindex){ echo "<h1>$msgindex</h1>"; }
-ShowIndexMessage("Estamos no Index.php - v1.0");
+ShowIndexMessage("Estamos no Index.php - ".getVersion());
 echo "<a href=\"msg.php\">Ir para msg.php</a>";
 ?>
 </body></html>
